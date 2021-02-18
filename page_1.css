@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url('https://www.myporter.com/wp-content/uploads/2017/03/spring-banner-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  max-width: 75%;
+  margin: auto;
+}
+
+#content {
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 50px;
+
+  font-family: 'Assistant', sans-serif;
+}
+
+#buttons {
+  position: absolute;
+
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
