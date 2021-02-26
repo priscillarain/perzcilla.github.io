@@ -1,0 +1,112 @@
+body {
+	background-color:#c7bbbb;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	font-size:12px;
+	color:#737371;
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;
+
+}
+
+p { display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#Priscilla{
+    font-family: 'Quicksand', sans-serif;
+    font-size:4em;
+    letter-spacing: 1;
+    color:#581e22
+}
+
+h1{
+    font-size:4.5em;
+    font-family: 'Economica', sans-serif;
+    letter-spacing: 20px;
+}
+
+h2{
+    font-size:2em;
+    font-family: 'Economica', sans-serif;
+}
+
+/*.fullpage{
+	background-image: url("John-Sreenan-Resume.jpg");
+
+	   Full height
+	  height: 100%;
+
+	   Center and scale the image nicely
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+
+}
+*/
+.container{
+    width:960px;
+    background-color:#999999;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:auto;
+    text-align: center;
+}
+
+/*.instagram-media{
+
+	text-align: right;
+}*/
+#savage{
+    margin-left: 10px;
+}
+/*#chautauqua{
+	margin-left: 5px;
+}*/
+
+#apartment{
+    margin-right: 10px
+}
+
+#bio{
+    float:center;
+    width: 930px;
+    padding-right:75px;
+    font-size: 1.9em;
+}
+
+#nav{
+    /*float:center;*/
+    width: 925px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+    font-size: 2em;
+}
+
+#nav-title{
+    margin-top:50px;
+    padding-right:0px;
+    padding-left:50px;
+    text-align:center;
+    font-family: 'Economica', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.6em;
+    color:#581e22;
+}
+
+
+#text-container{
+  overflow:auto;
+  margin-top:50px;
+  padding-right:0px;
+  padding-left:50px;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  color:#4d0000;
+}
