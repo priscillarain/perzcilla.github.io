@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+    <!-- https://stackoverflow.com/questions/7790725/javascript-track-mouse-position -->
+
+    <head>
+      <meta charset="utf-8">
+      <title>Example Mouse Tracker</title>
+      <style>    
+        body {height: 3000px;}
+        .dot {width: 2px;height: 2px;background-color: black;position: absolute;}
+        .reddot {width: 2px;height: 2px;background-color: red;position: absolute;}
+        .bluedot {width: 2px;height: 2px;background-color: blue;position: absolute;}
+      </style>
+    </head>
+    <body>
+    <p>Mouse tracker</p>
+    <div id="main" style="width:500px;height:500px;border:1px solid black">
+
+    </div>
+
+    <script>
+
+    var dotColor = "black";
+
+    function setColor(color) {
+       // color is red, blue or black
+      
+      var a = 3; // local
+      
+      if(color == "blue"){
+      	   dotColor = "blue"
+      }
+    }
+
+    onmousemove = function(e){
+        //Logging
+        //console.log("mouse location:", e.clientX, e.clientY); 
+
+        var pos = e;
+        var dot;
+        dot = document.createElement('div');
+
+        dot.className = "reddot";
+				if (dotColor == "blue"){
+         	dot.className = "bluedot"; 
+        }
+      
+        dot.style.left = pos.x + "px";
+        dot.style.top = pos.y + "px";
+
+        var element = document.getElementById("main");
+				if (pos.x<510 && pos.y<550 && pos.x>10 && pos.y>50){
+        element.appendChild(dot);
+        }
+    }      
+    </script>
+
+    <div>
+        <span onclick="setColor('red')">Red</span>
+    </div>
+
+    <div>
+        <span onclick="setColor('blue')">Blue</span>
+    </div>
+
+    <div>
+        <span onclick="setColor('black')">Black</span>
+    </div>
+
+    </body>
+    </html>

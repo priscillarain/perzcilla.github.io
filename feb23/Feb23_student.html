@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+
+    <!-- https://stackoverflow.com/questions/7790725/javascript-track-mouse-position -->
+
+    <head>
+      <meta charset="utf-8">
+      <title>Example Mouse Tracker</title>
+      <style>    
+        body {height: 3000px;}
+        .dot {width: 2px;height: 2px;background-color: black;position: absolute;}
+        .reddot {width: 2px;height: 2px;background-color: red;position: absolute;}
+
+        .bluedot {width: 2px;height: 2px;background-color: blue;position: absolute;}
+
+        .eraser {width: 50px;height: 50px;background-color: white;position: absolute;}
+
+      </style>
+    </head>
+    <body>
+    <p>Mouse tracker</p>
+    <div id="main" style="width:500px;height:500px;border:1px solid black">
+
+    </div>
+
+
+
+    <script>
+
+    var dotColor = "black";
+
+    function setColor(color) {
+
+        var a = 3; //local
+        if (color == "blue"){
+            dotColor = "blue"
+        }
+        else if (color == "red"){
+            dotColor = "red"
+        }        
+        else if (color == "black"){
+            dotColor = "black"
+        }
+        else if (color == "eraser"){
+            dotColor = "eraser"
+        }
+    }
+
+    onmousemove = function(e){
+        //Logging
+        //console.log("mouse location:", e.clientX, e.clientY);
+
+        var pos = e;
+        var dot;
+        dot = document.createElement('div');
+
+        dot.className = "dot";
+        if (dotColor == "blue"){
+            dot.className = "bluedot"
+        }
+        if (dotColor == "black"){
+            dot.className = "dot"
+        }
+        if (dotColor == "reddot"){
+            dot.className = "red"
+        }
+        else if (dotColor == "eraser"){
+            dot.className = "eraser"
+        }
+
+
+        dot.style.left = pos.x + "px";
+        dot.style.top = pos.y + "px";
+        
+
+
+        var element = document.getElementById("main");
+
+        if (pos.x <510 && pos.y<550 && pos.x>10 &&pos.y>50)
+
+        element.appendChild(dot);
+
+    }      
+
+    </script>
+
+        <button type="button" onclick="setColor('eraser')">!!ERASE!!</button>
+
+    <div>
+        <span onclick = "setColor('red')">Red</span>
+    </div>
+
+    <div>
+        <span onclick = "setColor('blue')">Blue</span>
+    </div>
+
+    <div>
+        <span onclick = "setColor('black')">Black</span>
+    </div>
+
+    </body>
+    </html>

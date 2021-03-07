@@ -35,19 +35,8 @@ h2{
     font-family: 'Economica', sans-serif;
 }
 
-/*.fullpage{
-	background-image: url("John-Sreenan-Resume.jpg");
+/*.*/
 
-	   Full height
-	  height: 100%;
-
-	   Center and scale the image nicely
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-
-}
-*/
 .container{
     width:960px;
     background-color:#999999;

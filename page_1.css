@@ -8,7 +8,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background-image: url('priscillarain.github.io/backgroundimg.jpg');
+=======
+  background-image: url('https://www.myporter.com/wp-content/uploads/2017/03/spring-banner-1.jpg');
+>>>>>>> 977b71c8148258fab75a749823d042d7d2cba4fd
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

@@ -1,5 +1,9 @@
 var slides = [
+<<<<<<< HEAD
 	`<img src="https://priscillarain.github.io/ladies.jpg" alt="bachelor" width="500">
+=======
+	`<img src="./imgs/spring.gif" />
+>>>>>>> 977b71c8148258fab75a749823d042d7d2cba4fd
      <p>These springs are very strong. VERY cool</p>`,
 	`<img src="./imgs/summer.gif" />
      <p>Wow so cool. Wish I was at the water park rn.</p>`,
